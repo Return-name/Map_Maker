@@ -89,9 +89,9 @@ pygame.init()
 
 pygame.display.set_caption("Map Maker")
 
-#screen_w = 1200
-#screen_h = 700
-screen_w, screen_h = 800,600
+screen_w = 1200
+screen_h = 700
+#screen_w, screen_h = 800,600
 screen = pygame.display.set_mode((screen_w,screen_h))
 
 #Colors
