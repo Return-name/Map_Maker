@@ -109,7 +109,7 @@ start_label_sprite = None
 font = pygame.font.SysFont(None, 24)
 
 edit_text1 ="EDITING MODE"
-edit_text2 = "ESC: Quit      N: New_Sprite       P: Play_Mode        R: Rotate       L: Size     C: Collide_Toggle       U: Delete       F: Bring_Front       V: Duplicate"
+edit_text2 = "ESC: Quit      N: New_Sprite       P: Play_Mode        S: Save_Map        R: Rotate       L: Size     C: Collide_Toggle       U: Delete       F: Bring_Front       V: Duplicate"
 edit_text_surf1 = font.render(edit_text1, True, BLACK)
 edit_ts1_rect = edit_text_surf1.get_rect()
 edit_text_surf2 = font.render(edit_text2, True, BLACK)
