@@ -220,7 +220,7 @@ while running:
                 elif event.key == K_n:
                     root = tk.Tk()
                     root.withdraw()
-                    img_path = filedialog.askopenfilename()
+                    img_path = filedialog.askopenfilename()[40:]
                     root.destroy()
                     if(img_path):
                         img_sprite = pygame.image.load(img_path)

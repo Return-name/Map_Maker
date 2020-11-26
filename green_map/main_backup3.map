@@ -1,4 +1,4 @@
-I-start_label.jpg,683,1086,0.0,0.350493899481,c=False,
+I-,683,1086,0.0,0.350493899481,c=False,
 I-green_map/bacckground_green.png,98,404,0.0,1.0,c=False,'pass'
 I-green_map/path_square.png,345,1008,0.0,4.594972986357222,c=False,
 I-green_map/path_square.png,1067,1014,0.0,4.594972986357222,c=False,
@@ -44,4 +44,3 @@ I-green_map/tree_withf.png,439,521,0.0,2.5937424601000023,c=True,'pass'
 I-green_map/tree_withf.png,1217,853,0.0,2.5937424601000023,c=True,'pass'
 I-green_map/tree_withf.png,1218,599,0.0,2.5937424601000023,c=True,'pass'
 I-green_map/tree_withf.png,1134,599,0.0,2.5937424601000023,c=True,'pass'
-I-green_map/wall_vertical_end.png,-20,977,0,3.797498335832415,c=False,
