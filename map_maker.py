@@ -235,6 +235,9 @@ while running:
                     st = Static(t, (200,200))
                     static_list.append(st)
 
+                elif event.key == K_s:
+                    save_map_disk(sprite_list, static_list)
+
                 elif event.key == K_p:
                     editing = False
                 elif event.key == K_d:
