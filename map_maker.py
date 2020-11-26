@@ -157,6 +157,15 @@ try:
 except Exception as e:
     print(e)
     print("No Existing map found , loading the default one")
+    surf = pygame.image.load("start_label.jpg").convert_alpha()
+    ts = sprite(surf, [0,0], "start_label.jpg")
+    ts.changeSize(0.350493899481)
+    ts.rect.topleft = (500,300)
+    ts.collide = False
+    ts.oncollide = ""
+    sprite_list.append(ts)
+    start_label_sprite = ts
+    print("Added start_label")
 
 #setting the player
 player = Player(screen_w,screen_h)
@@ -169,6 +178,19 @@ for i in player_filenames:
     player.add_img(t_img, t_rect)
 
 running = True
+
+def save_map_disk(sprite_list, static_list):
+    print("Saving Map to file "+ MAPNAME)
+    f = open(MAPNAME,'w')
+    for i in sprite_list:
+        if(i.filename):
+            if i.type == 1:
+                f.write("I-")
+            f.write(i.filename + "," + str(i.rect.topleft[0]) + "," + str(i.rect.topleft[1])+ "," + str(i.angle) + "," + str(i.scale) + "," + 'c=' + str(i.collide) + "," + i.oncollide + "\n")
+    for j in static_list:
+        f.write("T-" + j.getText() + "," + str(j.rect.topleft[0]) + "," + str(j.rect.topleft[1]) + "\n")
+    f.close()
+
 
 while running:
     moving = False
@@ -424,19 +446,17 @@ while running:
             frame_num = 1
         clock.tick(60)
 
-
-
-print("Saving Map to file "+ MAPNAME)
-f = open(MAPNAME,'w')
-for i in sprite_list:
-    if(i.filename):
-        if i.type == 1:
-            f.write("I-")
-        f.write(i.filename + "," + str(i.rect.topleft[0]) + "," + str(i.rect.topleft[1])+ "," + str(i.angle) + "," + str(i.scale) + "," + 'c=' + str(i.collide) + "," + i.oncollide + "\n")
-for j in static_list:
-    f.write("T-" + j.getText() + "," + str(j.rect.topleft[0]) + "," + str(j.rect.topleft[1]) + "\n")
-
-f.close()
-
-print("Save Completed")
 pygame.quit()
+while(True):
+    i = input("Save to disk? y/n : ")
+    if i == 'y' or i == "Y" or i == "yes" or i == "Yes":
+        save_map_disk(sprite_list, static_list)
+        break
+    elif i == 'n' or i == "N" or i == "no" or i == "No":
+        break
+    else:
+        print("Sorry, Enter again ")
+
+
+#print("Save Completed")
+

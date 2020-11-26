@@ -1,0 +1,17 @@
+I-start_label.jpg,864,927,0.0,0.350493899481,c=False,
+I-green_map/bacckground_green.png,50,176,0.0,1.0,c=False,
+I-green_map/tree_nof.png,537,418,0.0,3.4522712143931042,c=True,'pass'
+I-green_map/tree_nof.png,1110,510,0.0,3.4522712143931042,c=True,''
+I-green_map/tree_withf.png,532,176,0.0,3.797498335832415,c=True,'m = int(static_list[0].getText()[8:])\nm += 1\nstatic_list[0].setText("Money : " + str(m))'
+I-green_map/tree_withf.png,1390,316,0.0,3.797498335832415,c=True,'pass'
+I-green_map/tree_withf.png,1272,316,0.0,3.797498335832415,c=True,'pass'
+I-green_map/Path_Straight.png,794,944,0.0,2.8531167061100033,c=False,
+I-green_map/Path_Straight.png,375,944,0.0,2.853116706110004,c=False,
+I-green_map/Path_Straight.png,572,944,0.0,2.853116706110004,c=False,
+I-green_map/pool.png,1165,736,0.0,3.797498335832415,c=True,'moved[0] += 200\nmoved_old[0] += 200'
+I-green_map/pool.png,180,841,0.0,3.797498335832415,c=True,'pass'
+I-green_map/tree_nof.png,823,316,0.0,3.4522712143931042,c=True,''
+I-green_map/tree_nof.png,905,510,0.0,3.4522712143931042,c=True,'pass'
+I-green_map/tree_nof.png,265,504,0.0,3.4522712143931042,c=True,'pass'
+I-green_map/tree_withf.png,1154,316,0.0,3.797498335832415,c=True,'pass'
+T-Money : 312,354,5
