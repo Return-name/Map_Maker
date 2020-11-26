@@ -222,7 +222,8 @@ while running:
                 elif event.key == K_n:
                     root = tk.Tk()
                     root.withdraw()
-                    img_path = filedialog.askopenfilename()[40:]
+                    img_path = filedialog.askopenfilename()[37:]
+                    print(img_path)
                     root.destroy()
                     if(img_path):
                         img_sprite = pygame.image.load(img_path)
@@ -243,9 +244,9 @@ while running:
                 elif event.key == K_p:
                     editing = False
                 elif event.key == K_d:
-                    moved[0] -= 10
+                    moved[0] -= 100
                 elif event.key == K_a:
-                    moved[0] += 10
+                    moved[0] += 100
 
             elif event.type == MOUSEMOTION: 
                 if moving:
